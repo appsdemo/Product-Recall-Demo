@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                checkout([$class: 'GitSCM', branches: [[name: '*/master']], userRemoteConfigs: [[url: 'https://github.com/appsdemo/React-JS-Demo-ProductRecall.git']]])
+                checkout([$class: 'GitSCM', branches: [[name: '*/master']], userRemoteConfigs: [[url: 'https://github.com/appsdemo-2/React-JS-Demo-ProductRecall.git']]])
                 sh 'apk add nodejs'
             }
         }
